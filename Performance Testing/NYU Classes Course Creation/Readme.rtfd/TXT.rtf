@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww19380\viewh21700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Get JMeter up and running\
+1. Copy JMeter.app to Applications folder on each of the load generator machines\
+\
+2. Place users.csv at the root level of the load generator machine\
+\
+3. Place 1MB.dmg at the root level of the load generator machine\
+\
+4. Update users.csv with any new user accounts, if applicable. \
+\
+5. Open Test Plan in JMeter.  \
+	Tip: The included JMeter.app bundle has the ability to open .jmx files just double clicking or drag-and-drop onto the JMeter icon.  For this to work, a file association musts be first created.  This can be done as follows:\
+	a. Right-click on the .jmx file you want to open, and select "Get Info"\
+	b. Under Open-with, select Other from the drop-down menu\
+	c. Select JMeter.app\
+	d. In The Get Info dialog, click "Change All"\
+\
+6. Run perl script\
+\
+7. Based on values from perl script, update the numbers for the iterations for each tool:\
+	for example: Forums, Help, Messages, Schedule, Syllabus, Web Content, Resources\
+\
+9. Update the script global variables by clicking on the main node in the Test Plan:\
+	SERVER\
+	PORT\
+	PROTOCOL\
+	TESTNAME\
+	APPSERVER --make sure this is pointing to the right app server\
+\
+10. Enable the thread group for the test that you want to run.  For example, if running the simultaneous test, make sure the "Crawl Site Simultaneous" thread group is enabled and all other thread groups are disabled.\
+\
+11. Tunnel into the network containing the app server:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 ssh -N -L 4444:stageherculesapp1.home.nyu.edu:4444 tm1819@its.nyu.edu\
+\
+12. For the Aggregate graph, click the checkbox for "Column label selection" and specify "TC *" without quotes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+13. Run the test from each machine.  \
+\
+14. When the test has concluded, merge the results files using an application such as TextWrangler.  This is done as follows:\
+	a. Delete the first two lines from all but one .jtl file:\
+		<?xml version="1.0" encoding="UTF-8"?>\
+		<testResults version="1.2">\
+\
+	b. Delete the last line from all but one .jtl file:\
+		</testResults>\
+\
+	c. For each file where the lines were removed, copy and paste the contents into the file that was not trimmed, right above the last line (i.e. </testResults>)\
+\
+15. Open the combined file in JMeter, an perform analysis on it.\
+\
+16. Use the following SSL configuration in jmeter.properties:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 {{\NeXTGraphic SSL Config.png \width13420 \height9440
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+16. Data Preparation:\
+The testing assumes that the following data exists in the system:\
+	A. Test Accounts, as listed in the users.csv file\
+	B. An assessment must exist, matching the value set for ASSESSMENT in the test plan properties\
+		See screenshot below:\
+	C. A course site must exist which contains the aforementioned assessment.  The URL should be specified in the COURSE_SITE variable in the test plan properties.\
+		See screenshot below:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 {{\NeXTGraphic Screen Shot 2012-10-03 at 2.55.45 PM.png \width14000 \height7000
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+	D. The test account users specified in the CSV file must be students, and they must be enrolled in the aforementioned courses.\
+	E. The Assignment configured as that listed in the "Demo Assignment.pdf: file\
+}

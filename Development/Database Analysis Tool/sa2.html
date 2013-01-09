@@ -1,0 +1,56 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+	<link href="resources/page/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/page/styles.css" rel="stylesheet">
+
+    <meta charset="utf-8" />
+    <title>NYU Classes Analytics</title>
+    <link rel="stylesheet" href="resources/datePicker/jquery-ui.css" />
+    <script src="resources/datePicker/jquery-1.8.3.js"></script>
+    <script src="resources/datePicker/jquery-ui.js"></script>
+    <link rel="stylesheet" href="resources/datePicker/style.css" />
+    
+    <script>
+    $(function() {
+        $( "#datepicker0" ).datepicker();
+    });
+        $(function() {
+        $( "#datepicker1" ).datepicker();
+    });
+    </script>
+    
+</head>
+<body>
+ 	<div class="left"><img title="NYULogo" alt="NYU" src="resources/page/nyu_logo.png" /></div>
+	<div class="center"><img title="Classes" alt="Logo" src="resources/page/nyu_classes.png" /></div>
+      
+	<div class="container">
+		<h1>NYU Classes Analytics</h1>
+		The NYU Classes Analytics tool displays a graphical representation of usage data as logged in the session and event tables.
+      
+		<h2>Usage Graph</h2>
+        
+		<form class="form-horizontal" action="http://localhost/~thomasmartin/sa2.cgi">
+
+			<img title="Logo" alt="Logo" src="LastHours.png" />
+
+			<h2>Graph Options</h2>
+        
+			<!--
+			<p>Start Date: <input type="startDate" id="datepicker0" name="date0"/></p>
+			<p>End Date: <input type="endDate" id="datepicker1" name="date1" /></p>
+			--!>
+			
+			Number of hours to show: <input type="startDate" id="lastHoursField" name="lastHours"/></p>
+
+			<div class="form-actions">
+				<button id="submit" class="btn btn-primary">Show Usage</button>
+			</div>
+
+		</form>
+
+	</div>
+</body>
+</html>

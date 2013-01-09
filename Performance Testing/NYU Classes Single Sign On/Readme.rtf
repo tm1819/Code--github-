@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww19380\viewh15260\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Get JMeter up and running\
+1. Copy JMeter.app to Applications folder on each of the load generator machines\
+\
+2. Place users.csv at the root level of the load generator machine\
+\
+3. Place 1MB.dmg at the root level of the load generator machine\
+\
+4. Update users.csv with any new user accounts, if applicable. \
+\
+5. Open Test Plan in JMeter.  \
+	Tip: The included JMeter.app bundle has the ability to open .jmx files just double clicking or drag-and-drop onto the JMeter icon.  For this to work, a file association musts be first created.  This can be done as follows:\
+	a. Right-click on the .jmx file you want to open, and select "Get Info"\
+	b. Under Open-with, select Other from the drop-down menu\
+	c. Select JMeter.app\
+	d. In The Get Info dialog, click "Change All"\
+\
+6. Run perl script\
+\
+7. Based on values from perl script, update the numbers for the iterations for each tool:\
+	for example: Forums, Help, Messages, Schedule, Syllabus, Web Content, Resources\
+\
+8. Update the paths for the data collectors:\
+	Aggregate Graph\
+	Transaction Throughput vs. Threads\
+	Response Times vs Threads\
+	Bytes Throughput over Time\
+	PerfMon Metrics Collector\
+\
+9. Update the script global variables by clicking on the main node in the Test Plan:\
+	SERVER\
+	PORT\
+	PROTOCOL\
+\
+10. Click on the Min Threadgropu (called "Crawl Site") and make sure the loop count is forever.\
+\
+11. For the PerfMon Metrics Collector, make sure that the Host IP is pointing to each of the app servers being monitored, and not the F5\
+\
+12. Run the test and analyze the results\
+\
+\
+}
