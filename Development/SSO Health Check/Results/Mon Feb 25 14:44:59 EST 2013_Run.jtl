@@ -1,0 +1,49 @@
+1361821500236,743,/,200,OK,SSO Health Check 1-1,text,true,2824,421
+1361821500989,8,/,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361821500999,2767,/portal/relogin,200,OK,SSO Health Check 1-1,text,true,55935,783
+1361821503769,600,/portal/,200,OK,SSO Health Check 1-1,text,true,55740,417
+1361821504372,40,/portal/logout,200,OK,SSO Health Check 1-1,text,true,2837,31
+1361821504414,11,/portal,200,OK,SSO Health Check 1-1,text,true,2551,11
+1361821499964,4463,LDAP Check,200,"Number of samples in transaction : 6, number of failing samples : 0",SSO Health Check 1-1,,true,122438,1671
+1361822404416,497,/,200,OK,SSO Health Check 1-1,text,true,2824,344
+1361822404915,10,/,200,OK,SSO Health Check 1-1,text,true,2551,9
+1361822404926,2413,/portal/relogin,200,OK,SSO Health Check 1-1,text,true,55935,743
+1361822407340,428,/portal/,200,OK,SSO Health Check 1-1,text,true,55740,420
+1361822407770,43,/portal/logout,200,OK,SSO Health Check 1-1,text,true,2837,33
+1361822407816,8,/portal,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361822404403,3422,LDAP Check,200,"Number of samples in transaction : 6, number of failing samples : 0",SSO Health Check 1-1,,true,122438,1557
+1361823307814,477,/,200,OK,SSO Health Check 1-1,text,true,2824,346
+1361823308294,8,/,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361823308303,2419,/portal/relogin,200,OK,SSO Health Check 1-1,text,true,55935,736
+1361823310724,413,/portal/,200,OK,SSO Health Check 1-1,text,true,55740,405
+1361823311139,46,/portal/logout,200,OK,SSO Health Check 1-1,text,true,2837,36
+1361823311187,7,/portal,200,OK,SSO Health Check 1-1,text,true,2551,7
+1361823307806,3389,LDAP Check,200,"Number of samples in transaction : 6, number of failing samples : 0",SSO Health Check 1-1,,true,122438,1538
+1361824211194,227,/,200,OK,SSO Health Check 1-1,text,true,2824,94
+1361824211423,9,/,200,OK,SSO Health Check 1-1,text,true,2551,9
+1361824211434,2664,/portal/relogin,200,OK,SSO Health Check 1-1,text,true,55935,770
+1361824214100,572,/portal/,200,OK,SSO Health Check 1-1,text,true,55740,561
+1361824214674,41,/portal/logout,200,OK,SSO Health Check 1-1,text,true,2837,31
+1361824214718,8,/portal,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361824211181,3546,LDAP Check,200,"Number of samples in transaction : 6, number of failing samples : 0",SSO Health Check 1-1,,true,122438,1473
+1361825114725,485,/,200,OK,SSO Health Check 1-1,text,true,2824,346
+1361825115213,10,/,200,OK,SSO Health Check 1-1,text,true,2551,10
+1361825115225,2589,/portal/relogin,200,OK,SSO Health Check 1-1,text,true,55935,624
+1361825117817,490,/portal/,200,OK,SSO Health Check 1-1,text,true,55740,482
+1361825118309,57,/portal/logout,200,OK,SSO Health Check 1-1,text,true,2837,47
+1361825118368,8,/portal,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361825114716,3661,LDAP Check,200,"Number of samples in transaction : 6, number of failing samples : 0",SSO Health Check 1-1,,true,122438,1517
+1361826018377,482,/,200,OK,SSO Health Check 1-1,text,true,2824,345
+1361826018861,8,/,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361826018870,2438,/portal/relogin,200,OK,SSO Health Check 1-1,text,true,55935,718
+1361826021310,400,/portal/,200,OK,SSO Health Check 1-1,text,true,55740,389
+1361826021711,45,/portal/logout,200,OK,SSO Health Check 1-1,text,true,2837,32
+1361826021758,8,/portal,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361826018369,3398,LDAP Check,200,"Number of samples in transaction : 6, number of failing samples : 0",SSO Health Check 1-1,,true,122438,1500
+1361826921777,481,/,200,OK,SSO Health Check 1-1,text,true,2824,346
+1361826922261,9,/,200,OK,SSO Health Check 1-1,text,true,2551,9
+1361826922271,2273,/portal/relogin,200,OK,SSO Health Check 1-1,text,true,55935,692
+1361826924546,410,/portal/,200,OK,SSO Health Check 1-1,text,true,55740,406
+1361826924958,42,/portal/logout,200,OK,SSO Health Check 1-1,text,true,2837,31
+1361826925001,8,/portal,200,OK,SSO Health Check 1-1,text,true,2551,8
+1361826921770,3240,LDAP Check,200,"Number of samples in transaction : 6, number of failing samples : 0",SSO Health Check 1-1,,true,122438,1492
